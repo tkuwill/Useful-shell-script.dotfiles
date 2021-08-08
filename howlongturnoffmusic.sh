@@ -6,6 +6,7 @@
 # Thank you for using this shell script, in order to make this run, change the access permission of the shell script with chmod +x .Then you can run theshell script by "./howlongturnoffmusic.sh".
 echo "Input mins:"
 read mins
-
+echo "Now time is"
+date
 echo "your itunes will close after ${mins} minute(s)."
 sleep ${mins}m && wmctrl -c itunes
