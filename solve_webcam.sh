@@ -7,6 +7,7 @@
 # Place this file in your /home/xxxx  (xxxx=user name)
 # follow these steps after every update of Ubuntu:
 # 1. test the webcam, if can't work, do following work.
+rm -r -f bcwc_pcie
 git clone https://github.com/patjak/bcwc_pcie.git
 cd bcwc_pcie
 sudo make
