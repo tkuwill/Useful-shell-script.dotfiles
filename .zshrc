@@ -1,0 +1,33 @@
+function battery {
+    upower --show-info /org/freedesktop/UPower/devices/battery_BAT0 | grep 'percentage' | cut  -c 25-28
+}
+setopt promptsubst
+RPROMPT=' %*%f  🔋$(battery)%'
+PROMPT='%F{38}   %f%F{231}%n@%f%F{38}%m%f  %F{14}at%~%f  
+%F{40}❯%f  '
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=99999
+setopt beep nomatch
+unsetopt autocd extendedglob notify
+bindkey -e
+bindkey "\e[3~" delete-char
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/will/.zshrc'
+zstyle ':completion:*' menu yes select
+autoload -Uz compinit
+compinit
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting.git/zsh-syntax-highlighting.zsh
+export LANGUAGE=en_US:en
+export LANG="zh_TW.utf8"
+
+# End of lines added by compinstall
+alias lah="ls -lah --color=auto"
+alias la="ls -la --color=auto"
+alias ls -la="ls -la --color=auto"
+alias ls="ls --color=auto"
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#686868,bg=black,bold,underline"
