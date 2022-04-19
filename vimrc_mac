@@ -32,6 +32,7 @@ set listchars=tab:>~,space:.
 set cindent
 set ai
 syntax on
+set shortmess-=S
 set splitbelow splitright
 " set laststatus=2
 " set statusline+=%F
