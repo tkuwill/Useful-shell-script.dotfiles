@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Author:Will  email:billwang1023+github@gmail.com
+# Author:Will  
 # Date:2021/07/26 Version1.0
 # Date:2021/08/23 Version2.1
 # Place:Taiwan
