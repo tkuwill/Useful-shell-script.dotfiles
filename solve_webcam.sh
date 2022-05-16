@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author:Will email:billwang1023+github@gmail.com
+# Author:Will 
 # Version:2021/08/05 v1.0
 # Place:Taiwan
 # Description: this shell script can let your macbook Facetime camera work on ubuntu. You should run this shell script after every update.
