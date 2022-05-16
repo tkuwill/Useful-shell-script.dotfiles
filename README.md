@@ -4,5 +4,5 @@
 - Place this file in your /home/xxxx  (xxxx=user name).
 - You can share this online of course, but remember to cite the source.
 
-## If having any problems, email me. Each of the shell scripts will have my email in. However, I am not engineer, just learning Linux. 
+
 > Helping each other, making us stronger!
