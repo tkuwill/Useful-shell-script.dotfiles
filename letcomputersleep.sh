@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author:Will  email:billwang1023+github@gmail.com
+# Author:Will 
 # Version:2021/08/08 v1.0 
 # Place:Taiwan
 # Description: let computer sleep after ? min(s).
