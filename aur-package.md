@@ -1,0 +1,20 @@
+appmenu-gtk-module-git
+downgrade
+dragon-drop
+intel-hybrid-codec-driver
+kipi-plugins
+libcmrt
+libkipi
+librewolf-bin
+microsoft-edge-stable-bin
+mpv-git
+nvidia-470xx-dkms
+nvidia-470xx-utils
+optimus-manager
+optimus-manager-qt
+paru
+skypeforlinux-stable-bin
+yay
+yt-dlp-drop-in
+zoom
+# Packages installed from aur 
