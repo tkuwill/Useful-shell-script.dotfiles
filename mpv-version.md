@@ -1,6 +1,6 @@
 # mpv-mpris used `community` version
 # 2022/06/20 Now mpv used `community` version.
-~ mpv used aur `mpv-git` ~
+~~ mpv used aur `mpv-git` ~~
 
 
 - Name            : mpv
