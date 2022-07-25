@@ -6,17 +6,18 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats 'on branch %b'
 
 
-function battery {
-	pmset -g batt | grep -Eo "\d+%" 
- }
+# function battery {
+	# pmset -g batt | grep -Eo "\d+%" 
+ # }
 #function battime {
 #      pmset -g batt | grep -Eo "\d:\d remaining"
 #}
 
 setopt promptsubst
-RPROMPT='[%?]| %*%f 🔋$(battery)% '
-PROMPT='  %F{165}%f %F{231}%n@%f%F{38}%m%f  %F{14}in %~ ${vcs_info_msg_0_} %f  
-%F{40}%#%f  '
+# RPROMPT='%F{232}[%?]| %*%f 🔋$(battery)% '
+# PROMPT='  %F{165}%f %F{232}%n@%f%F{18}%m%f  %F{20}in %~ ${vcs_info_msg_0_} %f  
+PROMPT='%F{20} %~ ${vcs_info_msg_0_} %f  
+%F{6} %#%f  '
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
@@ -36,8 +37,11 @@ source ~/.zsh/zsh-syntax-highlighting.git/zsh-syntax-highlighting.zsh
 # End of lines added by compinstall
 alias lah="ls -lah --color=auto"
 alias la="ls -la --color=auto"
+alias la="ls -Gla"
 alias ls -la="ls -la --color=auto"
-alias ls="ls --color=auto"
+#alias ls="ls --color"
+# alias ls="ls -G"
+alias ls -l="ls -Gl"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
