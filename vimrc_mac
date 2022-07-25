@@ -1,26 +1,21 @@
 call plug#begin('~/.vim/plugged')
-Plug 'airblade/vim-gitgutter'
-Plug 'editorconfig/editorconfig-vim'
-"Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
+
+" Color themes
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
+" other plugin
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
-
-
-
-
-
-
-
+Plug 'preservim/nerdtree'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
+set shortmess-=S
 set t_Co=256 
-set background=dark
+"let g:gruvbox_contrast_light = 'hard'
+"colorscheme gruvbox
+set background=light
 colorscheme PaperColor
 set cursorline
 set splitbelow splitright
@@ -32,7 +27,6 @@ set listchars=tab:>~,space:.
 set cindent
 set ai
 syntax on
-set shortmess-=S
 set splitbelow splitright
 " set laststatus=2
 " set statusline+=%F
@@ -72,9 +66,11 @@ set statusline+=\ Col:%c                    " current column
 
 "Keymapping
 nnoremap <C-A> :noh<cr>
-noremap <C-H> <Home>
-noremap <C-L> <End>
-
+nnoremap <C-H> <Home>
+nnoremap <C-L> <End>
+inoremap <C-H> <Home>
+inoremap <C-L> <End>
+map <F5> :NERDTreeToggle<CR>
 
 
 so ~/.vim/autoload/plug.vim
